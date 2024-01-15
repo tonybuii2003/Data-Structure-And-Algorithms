@@ -1,0 +1,18 @@
+P) - Play a song
+
+P
+
+CHose a song
+
+Printing all the songs
+
+CHoose a song: 1
+
+Playing Lol by Tony
+
+P
+
+Choose a song
+
+regex
+

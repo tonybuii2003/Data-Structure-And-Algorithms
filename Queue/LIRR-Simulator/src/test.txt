@@ -1,0 +1,280 @@
+Welcome to the LIRR Simulator, Leaving Irate Riders Regularly
+
+//This sample I/O is supposed to show you the mechanics of the program, the numbers are made up and may not add up.
+
+Mineola:
+
+Please enter first class arrival probability: .3
+
+Please enter second class arrival probability: .5
+
+Hicksville:
+
+Please enter first class arrival probability: .3
+
+Please enter second class arrival probability: .7
+
+Syosset:
+
+Please enter first class arrival probability: .4
+
+Please enter second class arrival probability: .6
+
+Huntington:
+
+Please enter first class arrival probability: .2
+
+Please enter second class arrival probability: .5
+
+Please enter first class capacity: 7
+
+Please enter second class capacity: 15
+
+Please enter number of trains: 4
+
+Please enter last arrival time of passengers: 14 //Throw exception if after last station arrival of last train
+
+Begin Simulation:
+
+---------------------------------------------
+
+Time 0:
+
+Station overview:
+
+Mineola:
+
+No first class passenger arrives
+
+Second class passenger ID 1 arrives
+
+Queues:
+
+First [empty]
+
+Second [P1@T0 //Basically Passenger 1 arrived at Time 0
+
+Hicksville:
+
+First class passenger ID 2 arrives
+
+Second class passenger ID 3 arrives
+
+Queues:
+
+First [P2@T0
+
+Second [P3@T0
+
+Syosset:
+
+No first class passenger arrives
+
+No second class passenger arrives
+
+Queues:
+
+First [empty]
+
+Second [empty]
+
+Huntington:
+
+First class passenger ID 4 arrives
+
+Second class passenger ID 5 arrives
+
+Queues:
+
+First [P4@T0
+
+Second [P5@T0
+
+Trains:
+
+Train 1 arrives at Huntington, There are 0 passengers in first class and 0 in second class.
+
+Passengers embarking in first class: P4
+
+Passengers embarking in second class: P5
+
+Train 2 will arrive at Huntington in 5 minutes.
+
+Train 3 will arrive at Huntington in 10 minutes.
+
+
+Train 4 will arrive at Huntington in 15 minutes.
+
+-------
+
+Time 1:
+
+Station overview:
+
+Mineola:
+
+First Class Passenger ID 6 arrives
+
+Second class passenger ID 7 arrives
+
+Queues:
+
+First [P6@T1
+
+Second [P1@T0,P7@T1
+
+Hicksville:
+
+First class passenger ID 8 arrives
+
+Second class passenger ID 9 arrives
+
+Queues:
+
+First [P2@T0,P8@T1
+
+Second [P3@T0,P9@T1
+
+Syosset:
+
+First class passenger ID 10 arrives
+
+Second class passenger ID 11 arrives
+
+Queues:
+
+First [P10@T1
+
+Second [P11@T1
+
+Huntington:
+
+No first class passenger arrives
+
+No second class passenger arrives
+
+Queues:
+
+First [empty]
+
+Second [empty]
+
+Trains:
+
+Train 1 will arrive in Syosset in 4 minutes
+
+Train 2 will arrive at Huntington in 4 minutes.
+
+Train 3 will arrive at Huntington in 9 minutes.
+
+
+Train 4 will arrive at Huntington in 14 minutes.
+
+...//Much Later; we skipped a bunch of time steps
+
+-------
+
+Time 15: //No more arrivals
+
+Station overview:
+
+Mineola:
+
+No first class passenger arrives
+
+No second class passenger arrives
+
+Queues:
+
+First [P6@T1, P14@T3, P18@T4, P23@T6, P28@T7, P40@T10, P45@T11, P47@T12, P55@T14
+
+Second [P1@T0,P7@T1 P15@T3, P19@T4, P29@T7, P33@T9, P48@t12, P50@T13, P56@T14
+
+//The lines here are expected to be very long before first train arrives
+
+Hicksville:
+
+No first class passenger arrives
+
+No second class passenger arrives
+
+Queues:
+
+First [P46@T11, P57@T14
+
+Second [P52@T13, P58@T14
+
+Syosset:
+
+No first class passenger arrives
+
+No second class passenger arrives
+
+Queues:
+
+First [P52@T13, P59@T14
+
+Second [P49@T12, P60@T14
+
+Huntington:
+
+No first class passenger arrives
+
+No second class passenger arrives
+
+Queues:
+
+First [P53@T13, P61@T14
+
+Second [P54@T13, P62@T14
+
+Trains:
+
+Train 1 arrives at Mineola, there are 7 passengers in first class and 10 in second class.
+
+Passengers embarking in first class: none //it's full 
+
+Passengers embarking in second class: P6, P14, P18, P23, P28 //first class has priority, fill the train, 2nd class will wait
+
+Train 2 arrives at Hicksville, there are 3 passengers in first class, and 5 in second class.
+
+Passengers embarking in first class: P46, P57
+
+Passengers embarking in second class: P49, P60
+
+Train 3 arrives at Syosset, there are 1 passengers in first class and 2 in second class.
+
+Passengers embarking in first class: P52, P59
+
+Passengers embarking in second class: P49, P60
+
+
+Train 4 arrives at Huntington, there are 0 passengers in first class and 0 in second class.
+
+Passengers embarking in first class: P53, P61
+
+Passengers embarking in second class: P54, P62
+
+...//Much Later; we skipped a bunch of time steps
+
+-------
+
+//After a train has passed Mineola, write "Train X has stopped picking up passengers."
+
+//These are sample stats and may not reflect the above simulation. Average wait time may be rounded to the nearest integer.
+
+//Only consider passengers picked up by trains for average wait time. Count first class passengers sitting in second class as 1st class for stats
+
+-------
+
+At the end of the simulation:
+
+A total of 63 passengers were served, 5 first class passengers were left without a seat, 9 second class passengers were left without a seat.
+
+At Mineola 8 first class passengers were served with an average wait time of 19 min, 8 second class passengers were served with an average wait time of 23 min. 0 first class passengers and 0 second class passengers were left without a seat.
+
+At Mineola 7 first class passengers were served with an average wait time of 13 min, 12 second class passengers were served with an average wait time of 16 min. 1 first class passengers and 0 second class passengers were left without a seat.
+
+At Syosset 3 first class passengers were served with an average wait time of 8 min, 5 second class passengers were served with an average wait time of 8 min. 2 first class passengers and 3 second class passengers were left without a seat.
+
+At Huntington 8 first class passengers were served with an average wait time of 1 min, 12 second class passengers were served with an average wait time of 2 min. 2 first class passengers and 6 second class passengers were left without a seat.//It's possible for passengers to arrive after the last train passes their station everywhere but the last station.

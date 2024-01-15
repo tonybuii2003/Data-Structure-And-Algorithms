@@ -1,0 +1,92 @@
+Welcome to the Delinquent Dollar Delivery Scheduler.
+Menu:
+     A) Add a Delivery After Cursor
+     R) Remove Delivery At Cursor
+     X) Cut Cursor
+     V) Paste After Cursor
+     H) Cursor to Head
+     T) Cursor to Tail
+     F) Cursor Forward
+     B) Cursor Backward
+     S) Switch Delivery Lists
+     P) Print current list
+     Q) Quit
+Please select an option: A
+Please enter a source: China Station
+Please enter a destination: Tubman Hall
+Please enter any special instructions: Slide noodles under door one by one.
+Order inserted.
+Please select an option: A
+Please enter a source: Dominos
+Please enter a destination: Toscanini College
+Please enter any special instructions: Deliver right before sunrise.
+Order inserted.
+Please select an option: H
+Cursor is at head.
+Please select an option: A
+Please enter a source: Starbucks
+Please enter a destination: Chem Department
+Please enter any special instructions: Ensure all beverages have pH well above 7.
+Order inserted.
+Please select an option: T
+Cursor is at Tail.
+Please select an option: A
+Please enter a source: East Side Dining
+Please enter a destination: Nearest Dumpster
+Please enter any special instructions: Wear a hazard suit.
+Please select an option: P
+Biz Billy's Deliveries:
+----------------------------------------------------------
+To: Tubman Hall | From: China Station          
+Instruction: Slide noodles under door one by one.
+~
+To: Chem Department | From: Starbucks                  
+Instruction: Ensure all beverages have pH well above 7.  
+->
+To: Toscanini College | From: Dominos    
+Instruction: Deliver right before sunrise.              //cursor doesn't move.
+~
+To: Nearest Dumpster | From: East Side Dining
+Instruction: Wear a hazard suit.
+---------------------------------------------------------
+Please select an option: X
+Cursor is cut.
+Please select an option: P
+Biz Billy's Deliveries:
+----------------------------------------------------------
+To: Tubman Hall | From: China Station          
+Instruction: Slide noodles under door one by one.
+~
+To: Chem Department | From: Starbucks                  
+Instruction: Ensure all beverages have pH well above 7.  
+->
+To: Nearest Dumpster | From: East Side Dining
+Instruction: Wear a hazard suit.               //cursor moves forward unless it's at tail.
+---------------------------------------------------------
+Please select an option: S
+Money Mike's list is selected.
+Please select an option: V
+Money Mike's Deliveries:
+----------------------------------------------------------
+->
+To: Toscanini College | From: Dominos    
+Instruction: Deliver right before sunrise.
+---------------------------------------------------------
+Please select an option: S
+Biz Billy's list is selected.
+Please select an option: R
+Delivery to Nearest Dumpster removed.
+Please select an option: B
+Cursor moved backward.
+Please select an option: P
+Biz Billy's Deliveries:
+----------------------------------------------------------
+->
+To: Tubman Hall | From: China Station          
+Instruction: Slide noodles under door one by one.
+~
+To: Chem Department | From: Starbucks                  
+Instruction: Ensure all beverages have pH well above 7.  
+---------------------------------------------------------
+Please select an option: Q
+Next time, try UPS!

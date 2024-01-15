@@ -1,0 +1,48 @@
+root
+Root Node
+A man has broken into your house, what do you do?
+root 4
+1
+Run away
+Which direction are you running?
+2
+Stay and fight
+Game Over.
+3
+Call 911
+What to tell the operator?
+4
+Hide in your bedroom.
+The man is approaching, what will you do?
+1 2 
+1-1
+Towards the door
+Game Over. Why would you head towards him?!
+1-2
+Towards the backdoor
+You have safely escaped the house. Nice Job!
+3 1
+3-1
+A man has broken into my house at xx street xx avenue.
+What to do while waiting?
+3-1 2
+3-1-1
+Make a dash towards the door.
+Game Over, you were caught.
+3-1-2
+Hide behind the couch.
+You succesfully hid until the cops arrived.
+4 2
+4-1
+Hide underneath your bed.
+The robber has sat upon your bed, try to calm your breathing.
+4-2
+B line it to your back door.
+You were caught, game over.
+4-1 2
+4-1-1
+Steady your breathing.
+The man has left without noticing you.
+4-1-2
+Don't steady your breathing.
+Why would you not? Absolutely game over!

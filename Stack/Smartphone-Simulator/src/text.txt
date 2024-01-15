@@ -1,0 +1,258 @@
+UML: https://www3.cs.stonybrook.edu/~cse214/hw/hw3-images/hw3-uml-sp22.png
+Create a map
+Welcome to the iPhony pocket telegraph simulator. You are on the home screen.
+Home Options:
+    S) Safari
+    M) Maps
+    Q) Quit
+Please select an option: M
+Stack Debug:
+[Home->MapsHome
+Current Screen: Maps Home
+Maps Options:
+     F) Find a place
+     P) Plan a route
+     N) Start Navigation
+     H) Home Screen
+     S) Switch to Safari
+     B) Back
+Please select an option: N
+No route or destination!
+Stack Debug:
+[Home->MapsHome
+Current Screen: Maps Home
+Maps Options:
+     F) Find a place
+     P) Plan a route
+     N) Start Navigation
+     H) Home Screen
+     S) Switch to Safari
+     B) Back
+Please select an option: F
+Please enter a location: Microsoft Store
+Stack Debug:
+[Home->MapsHome->F:Microsoft Store
+Current Screen: Showing results for Microsoft Store
+Maps Options:
+     F) Find a place
+     P) Plan a route
+     N) Start Navigation
+     H) Home Screen
+     S) Switch to Safari
+     B) Back
+Please select an option: N
+Maps Options:
+     F) Find a place
+     P) Plan a route
+     N) Start Navigation
+     H) Home Screen
+     S) Switch to Safari
+     B) Back
+Current Screen: Navigating to Microsoft Store
+Stack Debug:
+[Home->SafariHome->F:Microsoft Store->N:Microsoft Store
+Please select an option: B
+Stack Debug:
+[Home->MapsHome->F:Microsoft Store
+Current Screen: Showing results for Microsoft Store
+Maps Options:
+     F) Find a place
+     P) Plan a route
+     N) Start Navigation
+     H) Home Screen
+     S) Switch to Safari
+     B) Back
+Please select an option: P
+Please enter a source: Target
+Please enter a destination: Walmart
+Stack Debug:
+[Home->MapsHome->F:Microsoft Store->P:Target-Walmart
+Current Screen: Planning route from Target to Walmart
+Maps Options:
+     F) Find a place
+     P) Plan a route
+     N) Start Navigation
+     H) Home Screen
+     S) Switch to Safari
+     B) Back
+Please select an option: N
+Stack Debug:
+[Home->MapsHome->F:Microsoft Store->P:Target-Walmart->N:Target-Walmart
+Current Screen: Navigating from Target to Walmart
+Maps Options:
+     F) Find a place
+     P) Plan a route
+     N) Start Navigation
+     H) Home Screen
+     S) Switch to Safari
+     B) Back
+Please select an option: S
+Stack Debug:
+[Home->SafariHome
+Current Screen: Safari Home
+Safari Options:
+     G) Google Something
+     F) Go to a favorite (bookmark)
+     L) Follow a link
+     H) Home Screen
+     S) Switch to Maps
+     B) Back
+Please select an option: G
+Please enter a query: Best web browser
+Stack Debug:
+[Home->SafariHome->G:Best web browser
+Current Screen: Google: Best web browser
+Safari Options:
+     G) Google Something
+     F) Go to a favorite (bookmark)
+     L) Follow a link
+     H) Home Screen
+     S) Switch to Maps
+     B) Back
+Please select an option: L
+Please enter a link: chrome.com
+Stack Debug:
+[Home->SafariHome->G:Best web browser->L:chrome.com
+Current Screen: chrome.com
+Safari Options:
+     G) Google Something
+     F) Go to a favorite (bookmark)
+     L) Follow a link
+     H) Home Screen
+     S) Switch to Maps
+     B) Back
+Please select an option: B
+Stack Debug:
+[Home->SafariHome->G:Best web browser
+Current Screen: Google: Best web browser
+Safari Options:
+     G) Google Something
+     F) Go to a favorite (bookmark)
+     L) Follow a link
+     H) Home Screen
+     S) Switch to Maps
+     B) Back
+Please select an option: S
+Stack Debug:
+[Home->MapsHome->F:Microsoft Store->P:Target-Walmart->N:Target-Walmart
+Current Screen: Navigating from Target to Walmart
+Maps Options:
+     F) Find a place
+     P) Plan a route
+     N) Start Navigation
+     H) Home Screen
+     S) Switch to Safari
+     B) Back
+Please select an option: B
+Stack Debug:
+[Home->MapsHome->F:Microsoft Store->P:Target-Walmart
+Current Screen: Planning route from Target to Walmart
+Maps Options:
+     F) Find a place
+     P) Plan a route
+     N) Start Navigation
+     H) Home Screen
+     S) Switch to Safari
+     B) Back
+Please select an option: B
+Stack Debug:
+[Home->MapsHome->F:Microsoft Store
+Current Screen: Showing results for Microsoft Store
+Maps Options:
+     F) Find a place
+     P) Plan a route
+     N) Start Navigation
+     H) Home Screen
+     S) Switch to Safari
+     B) Back
+Please select an option: S
+Stack Debug:
+[Home->SafariHome->G:Best web browser
+Current Screen: Google: Best web browser
+Safari Options:
+     G) Google Something
+     F) Go to a favorite (bookmark)
+     L) Follow a link
+     H) Home Screen
+     S) Switch to Maps
+     B) Back
+Please select an option: L
+Please enter a link: firefox.com
+Stack Debug:
+[Home->SafariHome->G:Best web browser->L:firefox.com
+Current Screen: firefox.com
+Safari Options:
+     G) Google Something
+     F) Go to a favorite (bookmark)
+     L) Follow a link
+     H) Home Screen
+     S) Switch to Maps
+     B) Back
+Please select an option: B
+Stack Debug:
+[Home->SafariHome->G:Best web browser
+Current Screen: Google: Best web browser
+Safari Options:
+     G) Google Something
+     F) Go to a favorite (bookmark)
+     L) Follow a link
+     H) Home Screen
+     S) Switch to Maps
+     B) Back
+Please select an option: B
+Stack Debug:
+[Home->SafariHome
+Current Screen: Safari Home
+Safari Options:
+     G) Google Something
+     F) Go to a favorite (bookmark)
+     L) Follow a link
+     H) Home Screen
+     S) Switch to Maps
+     B) Back
+Please select an option: F
+Please enter bookmark name: 214 Sections Page
+Stack Debug:
+[Home->SafariHome->F:214 Sections Page
+Current Screen: Safari Home
+Safari Options:
+     G) Google Something
+     F) Go to a favorite (bookmark)
+     L) Follow a link
+     H) Home Screen
+     S) Switch to Maps
+     B) Back
+Please select an option: B
+Stack Debug:
+[Home->SafariHome
+Current Screen: Safari Home
+Safari Options:
+     G) Google Something
+     F) Go to a favorite (bookmark)
+     L) Follow a link
+     H) Home Screen
+     S) Switch to Maps
+     B) Back
+Please select an option: B //H would do the same thing
+Home Options:
+    S) Safari
+    M) Maps
+    Q) Quit
+Please select an option: M
+Stack Debug:
+[Home->MapsHome->F:Microsoft Store
+Current Screen: Showing results for Microsoft Store
+Maps Options:
+     F) Find a place
+     P) Plan a route
+     N) Start Navigation
+     H) Home Screen
+     S) Switch to Safari
+     B) Back
+Please select an option: H
+Home Options:
+    S) Safari
+    M) Maps
+    Q) Quit
+Please select an option: Q
+Sorry to see you go, tell the iPod I said hi!

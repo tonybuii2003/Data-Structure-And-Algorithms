@@ -1,0 +1,97 @@
+Welcome to Jack's aMAzin' Textbook Rentals, highest price guaranteed!
+Menu:
+     A) Add Book
+     S) Swap Books
+     L) Loan Book
+     R) Remove Book
+     D) Duplicate Book
+     C) Change Shelf
+     O) Overwrite shelf with clone of current shelf
+     E) Check if two shelves are equal
+     P) Print current bookshelf
+     Q) Quit
+Please select an option: A
+Please enter a title: A Brief Introduction to Brief Introductions
+Please enter an author: Luke Long
+Please enter condition (1-5): 4
+Please enter position on shelf: 1
+Book added!
+//Menu not reprinted for brevity. You may reprint the menu after every instruction if you like.
+Please select an option: A
+Please enter a title: Introductory Computer Science
+Please enter an author: TurnItOff AndBackOnAgain
+Please enter condition (1-5): 5
+Please enter position on shelf: 2
+Book added!
+Please select an option: A
+Please enter a title: PRO-Crastination - A Guide To Efficiency
+Please enter an author: Oscar (The Big O) Martinez
+Please enter condition (1-5): 5
+Please enter position on shelf: 1
+Book added!
+Please select an option: P
+Bookshelf A:
+Spot Title                                            Author                    Cond. Borrower
+----------------------------------------------------------------------------------------------------------------
+1.   PRO-Crastination - A Guide To Efficiency         Oscar Martinez            5     <none>
+2.   A Brief Introduction to Brief Introductions      Luke Long                 4     <none>
+3.   Introductory Computer Science                    TurnItOff AndBackOnAgain  5     <none>
+Please select an option: L
+Please enter an index: 3
+Please enter a recipient: Bill Gates
+Please enter condition (1-5): 4
+Introductory Computer Science has been loaned to Bill Gates.
+Please select an option: S
+Please enter an index: 1
+Please enter another index: 2
+PRO-Crastination - A Guide To Efficiency has swapped with A Brief Introduction to Brief Introductions.
+Please select an option: D
+Please enter a source index: 3
+Please enter a destination index: 4
+A new copy of Introductory Computer Science is in index 4.
+Please select an option: P
+Bookshelf A:
+Spot Title                                            Author                    Cond. Borrower
+----------------------------------------------------------------------------------------------------------------
+1.   A Brief Introduction to Brief Introductions      Luke Long                 4     <none>
+2.   PRO-Crastination - A Guide To Efficiency         Oscar Martinez            5     <none>
+3.   Introductory Computer Science                    TurnItOff AndBackOnAgain  4     Bill Gates
+4.   Introductory Computer Science                    TurnItOff AndBackOnAgain  4     <none>
+Please select an option: O
+Please select shelf to overwrite with the : B
+Shelf B overwritten with a copy of Shelf A.
+Please select an option: C
+Please select shelf to look at: B
+Shelf B Selected.
+Please select an option: R
+Please enter an index: 2
+Please select an option: P
+Bookshelf B:
+Spot Title                                            Author                    Cond. Borrower
+----------------------------------------------------------------------------------------------------------------
+1.   A Brief Introduction to Brief Introductions      Luke Long                 4     <none>
+2.   Introductory Computer Science                    TurnItOff AndBackOnAgain  4     <none> //borrower isn't copied
+3.   Introductory Computer Science                    TurnItOff AndBackOnAgain  4     <none> //duplicates ARE allowed
+Please select an option: E
+Please select a shelf: a
+Please select another shelf: b
+These shelves are not equal.
+Please select an option: C
+Please select shelf to look at: A
+Shelf A Selected.
+Please select an option: P
+Bookshelf A:
+Spot Title                                            Author                    Cond. Borrower
+----------------------------------------------------------------------------------------------------------------
+1.   A Brief Introduction to Brief Introductions      Luke Long                 4     <none>
+2.   PRO-Crastination - A Guide To Efficiency         Oscar Martinez            5     <none>
+3.   Introductory Computer Science                    TurnItOff AndBackOnAgain  4     Bill Gates
+4.   Introductory Computer Science                    TurnItOff AndBackOnAgain  4     <none>
+Please select an option: R
+Please enter an index: 2
+Please select an option: E
+Please select a shelf: a
+Please select another shelf: b
+These shelves are equal. //borrower isn't compared for equality.
+Please select an option: Q
+Goodbye!
